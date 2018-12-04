@@ -1,0 +1,22 @@
+# Generic files to ignore
+
+*checkpoints*
+*.pyg
+*.aux
+*.bcf
+*_minted*
+*-blx.bib
+*.vrb
+.*.lb
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.out
+*.run.xml
+*.spl
+*.synctex.gz
+*.toc
+*.snm
+*.nav
+*.DS_Store
