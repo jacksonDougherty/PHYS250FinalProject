@@ -23,11 +23,7 @@ y0 = np.array([1.5,-0.2,-0.1], dtype = "float64")
 timeStop = 5000
 timeDivision = 0.1
 
-<<<<<<< HEAD
 def attractorSolution(ODE, timeStop, timeStep, y0):
-=======
-def attractorSolution(ODE, timeStop, timeStep):
->>>>>>> fbcccfddb06a42f67b89db8238be09cac8f72609
     timeSpan = (0, timeStop)
     timeEvaluations = np.linspace(0, timeStop, int(timeStop/timeDivision)+1)
 
@@ -37,11 +33,7 @@ def attractorSolution(ODE, timeStop, timeStep):
     odeSolution = integrate.solve_ivp(chuasODE, timeSpan, transientSolution.y[:,len(transientSolution.t)-1], method = "LSODA", t_eval= timeEvaluations)
     return odeSolution
 
-<<<<<<< HEAD
 attractor = attractorSolution(chuasODE, timeStop, timeDivision, y0)
-=======
-attractor = attractorSolution(chuasODE, timeStop, timeDivision)
->>>>>>> fbcccfddb06a42f67b89db8238be09cac8f72609
 
 fig = plt.figure()
 axes = fig.add_subplot(111, projection = "3d")
