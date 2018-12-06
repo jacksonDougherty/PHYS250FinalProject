@@ -6,6 +6,8 @@
 *.bcf
 *_minted*
 *-blx.bib
+*.bbl
+*.blg
 *.vrb
 .*.lb
 *.fdb_latexmk
